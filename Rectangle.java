@@ -98,4 +98,10 @@ public class Rectangle {
   public void setOriginX(double originX) { this.originX = originX; }
 
   public void setOriginY(double originY) { this.originY = originY; }
+
+  // Return a description of a rectangle in the form of
+  // Rectangle[x=*,y=*,w=*,h=*]
+  public String toString(){
+    return "Rectangle[x="+originX+",y="+originY+",w="+width+",h="+height+"]";
+  }
 }
