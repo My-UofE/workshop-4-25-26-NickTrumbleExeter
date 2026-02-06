@@ -81,5 +81,18 @@ public class RectangleApp {
 		// change to negative width should be ignored
 		myRect7.setWidth(-10);
 		System.out.println( "Width: "+myRect7.getWidth()+", Height: "+myRect7.getHeight() );
+
+		Rectangle r1 = new Rectangle(10.0,5.0);
+		Rectangle r2 = new Rectangle(10.0,5.0);
+		Rectangle r3 = r2;
+
+		System.out.println("Object reference tests:");
+		System.out.println("r1: " + r1);
+		System.out.println("r2: " + r2);
+		System.out.println("r3: " + r3);
+
+		r2.scale(0.5);
+		System.out.println("r2 width: " + r2.getWidth());
+		System.out.println("r3 width: " + r3.getWidth());
 	}
 }
